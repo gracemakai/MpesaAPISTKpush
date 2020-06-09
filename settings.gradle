@@ -1,0 +1,2 @@
+rootProject.name='Mpesa API STK push'
+include ':app'
