@@ -1,5 +1,7 @@
 package com.grace.mpesaapistkpush;
 
+import android.util.Log;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
@@ -30,14 +32,14 @@ public class Constants {
         return Phone;
     }
 
-    public void setPhone(String phone) {
-        Phone = phone;
-    }
-
     public String getTime(){
         Date date = new Date();
-        DateFormat dateFormat = new SimpleDateFormat("YYYYMMDDhhmmss");
-        System.out.println(dateFormat.format(date));
-        return dateFormat.format(date);
+        DateFormat dateFormat = new SimpleDateFormat("YYYMMDDHHmmss");
+        LocalDateTime localDateTime = LocalDateTime.now();
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("YYYY-MM-DD HHmmss");
+
+
+        Log.w("Date       ",  localDateTime.format(dateTimeFormatter));
+        return  localDateTime.format(dateTimeFormatter);
     }
 }

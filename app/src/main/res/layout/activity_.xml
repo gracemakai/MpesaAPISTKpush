@@ -6,26 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".Activity">
 
-    <Button
-        android:id="@+id/Generate"
+    <EditText
+        android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Generate Token"
+        android:layout_marginBottom="215dp"
+        android:hint="Phone Number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199" />
+        app:layout_constraintVertical_bias="0.276" />
 
-    <TextView
-        android:id="@+id/view"
-        android:text="Access Token"
+    <EditText
+        android:id="@+id/amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="216dp"
+        android:hint="Amount"
+        app:layout_constraintBottom_toTopOf="@+id/Generate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Generate" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
