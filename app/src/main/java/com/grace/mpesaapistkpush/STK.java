@@ -24,8 +24,8 @@ public class STK {
         JSONArray jsonArray=new JSONArray();
         JSONObject jsonObject=new JSONObject();
         jsonObject.put("BusinessShortCode", constants.getShortCode());
-        jsonObject.put("Password", password.EncodedPassword());
-        jsonObject.put("Timestamp", "20180409093002");
+        jsonObject.put("Password", "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTYwMjE2MTY1NjI3");
+        jsonObject.put("Timestamp", "20160216165627");
         jsonObject.put("TransactionType", "CustomerPayBillOnline");
         jsonObject.put("Amount",Amount);
         jsonObject.put("PhoneNumber", Phone);
